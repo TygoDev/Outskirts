@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee3e2d219df21941a8374e522e004b5, type: 3}
+  m_Name: Slimeball
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  itemName: Slimeball
+  description: A sticky, wobbling blob of condensed slime...
+  icon: {fileID: 3474400765828723021, guid: f43039ab88d9582458431f583a777d33, type: 3}
+  itemType: 0
+  stackable: 1
+  attackDamage: 0
+  sellPrice: 1
+  usable: 0

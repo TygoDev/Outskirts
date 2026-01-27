@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c980c72ffab4a934aab6c001c533808a, type: 3}
+  m_Name: Slime sword Recipe
+  m_EditorClassIdentifier: Assembly-CSharp::Recipe
+  resultItem: {fileID: 11400000, guid: 392b3c5dcee3d8e4b826c599c2189c64, type: 2}
+  itemsNeeded:
+  - item: {fileID: 11400000, guid: 1f386c820eaf25a45a1e97821979a8aa, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: be007bdb90141f74086381540ee8c7fe, type: 2}
+    amount: 20

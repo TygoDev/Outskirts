@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee3e2d219df21941a8374e522e004b5, type: 3}
+  m_Name: Slime sword
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  itemName: Slime sword
+  description: Why would you cover your sword in slime? How is that helpful...
+  icon: {fileID: 4053058784592248101, guid: 7633c5a848e6bc047b6a323ee29bb5e3, type: 3}
+  itemType: 3
+  stackable: 0
+  sellable: 1
+  attackDamage: 10
+  sellPrice: 5
+  buyPrice: 0
+  usable: 0
