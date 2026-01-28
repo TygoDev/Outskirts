@@ -13,10 +13,8 @@ public class Crafting : MonoBehaviour
     {
         foreach (InventoryEntry inventoryEntry in recipe.itemsNeeded)
         {
-            Debug.Log("Checking for item: " + inventoryEntry.item.itemName + " Amount needed: " + inventoryEntry.amount);
             if (!inventory.HasItem(inventoryEntry.item, inventoryEntry.amount))
             {
-                Debug.Log("Not enough items to craft " + recipe.resultItem.itemName);
                 return;
             }
         }

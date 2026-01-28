@@ -43,8 +43,6 @@ public class GameManager : MonoBehaviour
 
         HandleStateChange(previousState, newState);
         OnGameStateChanged?.Invoke(previousState, newState);
-
-        Debug.Log($"Game State changed from {previousState} to {newState}");
     }
 
     private void HandleStateChange(GameState from, GameState to)

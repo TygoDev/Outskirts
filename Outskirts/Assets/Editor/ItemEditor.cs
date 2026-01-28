@@ -29,6 +29,7 @@ public class ItemEditor : Editor
         {
             item.attackDamage = EditorGUILayout.IntField("Attack Damage", item.attackDamage);
         }
+        item.dropChance = EditorGUILayout.Slider("Drop Chance", item.dropChance, 0f, 100f);
 
         // Value and gameplay fields
         item.sellPrice = EditorGUILayout.IntField("Sell Price", item.sellPrice);

@@ -27,6 +27,7 @@ public class Item : ScriptableObject
 
     [Header("Item stats")]
     public int attackDamage;
+    public float dropChance;
 
     [Header("Value")]
     public int sellPrice;

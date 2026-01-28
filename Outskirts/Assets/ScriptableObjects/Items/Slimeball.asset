@@ -17,6 +17,8 @@ MonoBehaviour:
   icon: {fileID: 3474400765828723021, guid: f43039ab88d9582458431f583a777d33, type: 3}
   itemType: 0
   stackable: 1
+  sellable: 1
   attackDamage: 0
+  dropChance: 50
   sellPrice: 1
-  usable: 0
+  buyPrice: 0
