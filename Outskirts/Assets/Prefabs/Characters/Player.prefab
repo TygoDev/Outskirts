@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2426925189387161313}
-  - component: {fileID: 2968809177208097882}
   - component: {fileID: 5569420626661648451}
+  - component: {fileID: 6497890165709276364}
   - component: {fileID: 8883314550767912682}
   - component: {fileID: 4301864342496364886}
   m_Layer: 0
@@ -35,24 +35,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2968809177208097882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1457356057712585449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55ee44df83f4a8c4785b0c2a5a327a85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character
-  stats: {fileID: 11400000, guid: c80ce4e206649ca4dbce7671c6470cab, type: 2}
-  moveDirection: {x: 1, y: 0}
-  target: {fileID: 0}
-  currentHealth: 0
-  damageCooldown: 0.5
-  knockbackDecay: 5
 --- !u!212 &5569420626661648451
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -111,6 +93,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6497890165709276364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457356057712585449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282d5620ecda2d2429e2db826868d84d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  stats: {fileID: 11400000, guid: c80ce4e206649ca4dbce7671c6470cab, type: 2}
+  moveDirection: {x: -1, y: 0}
+  damageCooldown: 0.5
+  knockbackDecay: 5
 --- !u!50 &8883314550767912682
 Rigidbody2D:
   serializedVersion: 5

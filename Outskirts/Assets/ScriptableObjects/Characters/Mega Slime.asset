@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStats
   lootTable:
   - {fileID: 11400000, guid: be007bdb90141f74086381540ee8c7fe, type: 2}
+  moneyDropValue: 1
   characterName: Slime
   maxHealth: 10
   damage: 5
-  speed: 4
+  speed: 3
   knockbackForce: 5
   size: 2

@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8337706764211190677}
-  - component: {fileID: 5443155768211810494}
   - component: {fileID: 6732318830933223717}
+  - component: {fileID: 7766645210242229814}
   - component: {fileID: 3762103483797750991}
   - component: {fileID: 956818046634813437}
   m_Layer: 0
@@ -35,24 +35,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5443155768211810494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6634558689825670631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55ee44df83f4a8c4785b0c2a5a327a85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character
-  stats: {fileID: 11400000, guid: eaa5006eef98ae24e8e83ca106efa4dd, type: 2}
-  moveDirection: {x: -1, y: 0}
-  target: {fileID: 0}
-  currentHealth: 0
-  damageCooldown: 0.5
-  knockbackDecay: 5
 --- !u!212 &6732318830933223717
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -101,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.14117648}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -111,6 +93,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7766645210242229814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6634558689825670631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd1a670d603f084786a8821d9011810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  stats: {fileID: 11400000, guid: eaa5006eef98ae24e8e83ca106efa4dd, type: 2}
+  moveDirection: {x: -1, y: 0}
+  damageCooldown: 0.5
+  knockbackDecay: 5
 --- !u!50 &3762103483797750991
 Rigidbody2D:
   serializedVersion: 5

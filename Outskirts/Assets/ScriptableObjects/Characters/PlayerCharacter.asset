@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df71ebf5f3a653a4b8bacc95bbfb62bd, type: 3}
   m_Name: PlayerCharacter
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStats
+  lootTable: []
+  moneyDropValue: 1
   characterName: Player
   maxHealth: 10
   damage: 1
-  speed: 4
+  speed: 3
   knockbackForce: 5
   size: 1
