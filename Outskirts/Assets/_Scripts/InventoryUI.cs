@@ -15,6 +15,7 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] private Transform slotParent;
     [SerializeField] private GameObject slotPrefab;
     [SerializeField] private TMP_Text inventoryBalance;
+    [SerializeField] private GameObject descriptionObject;
 
     private readonly List<InventorySlotUI> slots = new();
 
@@ -70,7 +71,7 @@ public class InventoryUI : MonoBehaviour
         GameObject obj = Instantiate(slotPrefab, slotParent);
         InventorySlotUI slot = obj.GetComponent<InventorySlotUI>();
 
-        slot.Initialize(item, inventory);
+        slot.Initialize(item, inventory, descriptionObject);
 
         if (item.stackable)
             slot.SetAmount(amount);

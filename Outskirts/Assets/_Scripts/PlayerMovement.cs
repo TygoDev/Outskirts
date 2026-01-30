@@ -8,11 +8,14 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 movement;
+    private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
+
 
     public void Move(InputAction.CallbackContext context)
     {
@@ -22,5 +25,15 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(movement.x * moveSpeed, rb.linearVelocity.y);
+
+        // Animation speed
+        GetComponent<Animator>().SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
+
+        // Flip sprite
+        if (movement.x > 0)
+            spriteRenderer.flipX = false;
+        else if (movement.x < 0)
+            spriteRenderer.flipX = true;
     }
+
 }

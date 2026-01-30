@@ -229,6 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InventorySlotUI
   icon: {fileID: 7540047596481424908}
   amountText: {fileID: 4410190016636094088}
+  descriptionBackground: {fileID: 0}
 --- !u!114 &9174841691611633051
 MonoBehaviour:
   m_ObjectHideFlags: 0

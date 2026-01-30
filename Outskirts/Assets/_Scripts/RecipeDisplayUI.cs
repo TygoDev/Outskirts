@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class RecipeDisplayUI : MonoBehaviour
 {
+    [SerializeField] private GameObject inventoryItemDescription = null;
     public List<Image> itemsNeeded = new List<Image>();
     public Image resultItem;
     private Recipe selectedRecipe;
@@ -39,6 +40,9 @@ public class RecipeDisplayUI : MonoBehaviour
     {
         if (selectedRecipe != null)
         {
+            if(inventoryItemDescription.activeSelf)
+                inventoryItemDescription.SetActive(false);
+
             Crafting crafting = (Crafting)GameManager.Instance.shippedComponent;
             crafting.Craft(selectedRecipe);
         }
