@@ -53,6 +53,15 @@ public class InventorySlotUI : MonoBehaviour
                 itemDescription.SetValues(item.itemName, item.description, item.sellPrice);
             }
         }
+
+        if (
+    GameManager.Instance.CurrentState == GameState.Equiping &&
+    (item.itemType == ItemType.Equipment || item.itemType == ItemType.Weapon)
+)
+        {
+            Equipment.Instance.EquipItem(item);
+        }
+
     }
 
 
