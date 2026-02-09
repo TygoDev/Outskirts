@@ -25,7 +25,7 @@ public class PlayerInput : MonoBehaviour
         {
             interactCanvas.gameObject.SetActive(false);
             isOverlapping = false;
-            if(overlappingObject.GetComponent<ToggleMenu>() != null)
+            if(overlappingObject.GetComponent<ToggleMenu>().isOpen())
             overlappingObject.GetComponent<ToggleMenu>().Close();
             overlappingObject = null;
         }

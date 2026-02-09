@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
         CurrentState = newState;
 
         HandleStateChange(previousState, newState);
+        Debug.Log($"Game state changed from {previousState} to {newState}");
         OnGameStateChanged?.Invoke(previousState, newState);
     }
 
@@ -58,6 +59,9 @@ public class GameManager : MonoBehaviour
             case GameState.Combat:
                 break;
 
+            case GameState.Equiping:
+                break;
+
             case GameState.Idle:
                 break;
         }
@@ -69,5 +73,6 @@ public enum GameState
     Crafting,
     Shopping,
     Combat,
+    Equiping,
     Idle
 }

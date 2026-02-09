@@ -37,11 +37,17 @@ public class ToggleMenu : MonoBehaviour
         if (menuUI != null)
         {
             menuUI.SetActive(false);
-
-            if (changeState)
-            {
-                GameManager.Instance.SetState(GameState.Idle);
-            }
+            GameManager.Instance.SetState(GameState.Idle);
         }
+    }
+
+    public void StatelessClose()
+    {
+        menuUI.SetActive(false);
+    }
+
+    public bool isOpen()
+    {
+        return menuUI.activeSelf;
     }
 }
