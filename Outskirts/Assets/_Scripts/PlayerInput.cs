@@ -42,4 +42,16 @@ public class PlayerInput : MonoBehaviour
             }
         }
     }
+
+    public void Cancel(InputAction.CallbackContext context)
+    {
+
+        if (context.canceled)
+        {
+            if (overlappingObject != null)
+            {
+                overlappingObject.GetComponent<ToggleMenu>().Close();
+            }
+        }
+    }
 }

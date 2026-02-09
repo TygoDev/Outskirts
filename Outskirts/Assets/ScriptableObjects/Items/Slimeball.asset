@@ -21,4 +21,4 @@ MonoBehaviour:
   attackDamage: 0
   dropChance: 50
   sellPrice: 1
-  buyPrice: 0
+  buyPrice: 1

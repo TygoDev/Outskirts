@@ -19,6 +19,6 @@ MonoBehaviour:
   stackable: 0
   sellable: 1
   attackDamage: 10
+  dropChance: 0
   sellPrice: 5
-  buyPrice: 0
-  usable: 0
+  buyPrice: 5
